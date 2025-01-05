@@ -1,0 +1,22 @@
+.dashboard {
+    padding: 20px 0;
+    position: relative;
+}
+
+.dashboard-header {
+    margin-bottom: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.freelancer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
+}
+
+.freelancer-grid>* {
+    flex: 1;
+}
