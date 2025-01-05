@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --background-color: #FFFFFF;
+  --component-bg: #FFFFFF;
+  --text-main: #2F2F2F;
+  --text-tinted: #6E6E6E;
+  --gray-bg: #F6F6F6;
+  --stroke: #C0C0C0;
+  --primary-color: #1D6CFF;
+  --primary-bg: #1D6CFF15;
+  --shadow:  rgba(149, 157, 165, 0.2);
+}
+
+[data-theme="dark"] {
+  --background-color: #1c1c1c;
+  --component-bg: #1f1f1f;
+  --text-main: #FFFFFF;
+  --text-tinted: #a1a1a1;
+  --gray-bg: #1a1a1a;
+  --stroke: #4f4f4f;
+  --primary-color: #1D6CFF;
+  --primary-bg: #1D6CFF15;
+  --shadow:  rgba(0, 0, 0, 0.0);
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--text-main);
+  background-color: var(--background-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  margin: .6em 0;
+  font-size: 3.6em;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}

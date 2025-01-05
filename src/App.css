@@ -1,0 +1,47 @@
+.App {
+    padding: 0 16px;
+}
+
+.hire-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+
+    background-color: var(--gray-bg);
+    padding: 16px 24px;
+    border-radius: 12px;
+
+    .hire-text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+
+        h3 {
+            font-size: 2em;
+        }
+    }
+
+    button {
+        all: unset;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.6em 1.2em;
+        border-radius: 100px;
+
+        transition: transform 0.2s ease-in-out;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
+
+.hire-section.full-width {
+    width: calc(100% - 48px);
+    max-width: none;
+}
