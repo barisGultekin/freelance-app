@@ -1,0 +1,120 @@
+.filter-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.filter-panel-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.filter-panel-top button {
+    all: unset;
+    border-radius: 8px;
+
+    min-height: 100%;
+    min-width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: .7em 1.2em;
+    font-size: 1em;
+
+    background-color: var(--gray-bg);
+    color: var(--text-tinted);
+
+    &:hover {
+        background-color: var(--primary-bg);
+        cursor: pointer;
+    }
+
+    &.active {
+        background-color: var(--primary-bg);
+        color: var(--primary-color);
+    }
+
+    .show-saved-button-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+
+.filter-panel-top input {
+    padding: 1em 1.2em;
+    border-radius: 8px;
+    border: 1px solid var(--stroke);
+
+    color: var(--text-tinted);
+    background-color: var(--background-color);
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-bg);
+    }
+}
+
+.filter-panel-top .number-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.filter-panel-top .number-input {
+    width: 4em;
+}
+
+.filter-panel-top .search-input {
+    min-width: 280px;
+
+    
+}
+
+.city-toggle-container {
+    min-width: 100%;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 8px 0;
+}
+
+.city-toggle {
+    padding: 1em 1.6em;
+    font-size: 0.9rem;
+
+
+    border: 1px solid var(--stroke);
+    border-radius: 100px;
+
+    background-color: var(--background-color);
+    color: var(--text-tinted);
+
+    white-space: nowrap;
+    flex-shrink: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+
+
+.city-toggle:hover {
+    background-color: var(--gray-bg);
+    cursor: pointer;
+    border-color: var(--stroke);
+}
+
+.city-toggle.active {
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+    border-color: var(--primary-bg);
+}
+

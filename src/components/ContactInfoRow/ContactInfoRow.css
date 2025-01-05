@@ -1,0 +1,24 @@
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+}
+
+.contact-row-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+
+    background-color: var(--gray-bg);
+    color: var(--text-tinted);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-row-text {
+    color: var(--text-tinted);
+}

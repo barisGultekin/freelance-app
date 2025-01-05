@@ -1,0 +1,110 @@
+.freelancer-card {
+    all: unset;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 32px;
+    border-radius: 16px;
+
+    background-color: var(--component-bg);
+    box-shadow: var(--shadow) 0px 8px 24px;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.freelancer-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+/* HEADER STYLES */
+.freelancer-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.freelancer-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.freelancer-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    overflow: hidden;
+
+    background-color: var(--gray-bg);
+}
+
+.freelancer-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.freelancer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .2em;
+}
+
+.freelancer-contact {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.freelancer-save-button {
+    all: unset;
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--gray-bg);
+    color: var(--text-tinted);
+    border-radius: 12px;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.freelancer-save-button:hover {
+    background-color: var(--primary-bg);
+    color: var(--text-tinted);
+    transform: scale(1.05);
+}
+
+.freelancer-save-button.saved {
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+}
+
+/* TAG STYLES */
+.freelancer-tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.freelancer-tag {
+    padding: .6em 1.2em;
+
+    background-color: var(--background-color);
+    color: var(--text-tinted);
+    border: 1px solid var(--stroke);
+    
+    border-radius: 100px;
+}
