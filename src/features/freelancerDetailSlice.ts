@@ -40,15 +40,15 @@ export const fetchCommentCounts = createAsyncThunk(
     const postsResponse = await axios.get(`${API_BASE_URL}/posts?userId=${userId}`);
     const postIds = postsResponse.data.map((post: any) => post.id);
 
-    // Fetch comment counts for all posts concurrently
+    // Fetch comment counts for all posts
     const commentsResponses = await Promise.all(
-      postIds.map((postId) =>
+      postIds.map((postId: number) =>
         axios.get(`${API_BASE_URL}/comments?postId=${postId}`)
       )
     );
 
     // Map post IDs to comment counts
-    const commentCounts = postIds.reduce((acc: any, postId, index) => {
+    const commentCounts = postIds.reduce((acc: any, postId: number, index: number) => {
       acc[postId] = commentsResponses[index].data.length;
       return acc;
     }, {});
