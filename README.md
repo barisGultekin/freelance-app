@@ -60,8 +60,8 @@ Each freelancer in the dasboard are represented by a card.
 
 ### 4. Hire Freelancer Modal
 There are 2 components. A generic Modal component for possible future use cases and a HireForm component which is rendered inside the Modal in this case.
-- Modal styling
-- HireForm component
+- Modal component is styled accordingly to fit any use case for a pop-up functionality.
+- HireForm component is an html form with fundamental features and a simulated submit functionality which logs a potential payload to the console.
 
 ### 5. Mock API Integration w/ Axios
 #### Key Functionalities
@@ -72,6 +72,7 @@ There are 2 components. A generic Modal component for possible future use cases 
 
 #### Api Response Handling
 - Success: Updates the Redux store with fetched data (e.g., freelancers, posts, or comments).
+- Pending: Updates the store status to loading during the process.
 - Failure: Updates the store status to failed.
 
 ### 6. State Management w/ Redux
@@ -125,18 +126,13 @@ This folder contains Redux slices and store configuration.
 
 ## Known Issues and Future Work
 ### Jest Configuration Issue
-While implementing tests Redux slices relying on axios for API calls, this error recurred:
+While implementing tests for Redux slices, that rely on Axios for API calls, this error recurred:
 
-Cannot use import statement outside a module. 
+> Cannot use import statement outside a module. 
 
 This issue likely originates from a compatibility gap between Jest and ES Modules (import), specifically within node_modules packages like axios. Create React App’s (CRA) default Jest configuration has limitations in handling modern JavaScript modules, which may require additional transformations or overrides.
 
 Due to this persistent issue, testing for Redux slices that depend on asynchronous API calls (fetchFreelancers, fetchFreelancerById, etc.) was postponed.
-
-Resolving this issue requires investigating how Jest processes ES Modules in the current CRA setup. Potential approaches include:
-- Adjusting Jest’s transformIgnorePatterns to include necessary modules (e.g., axios) for transformation.
-- Exploring Babel or other transformers that can handle ES Modules within node_modules.
-- Referencing existing community solutions and issues (e.g., CRA issues related to Jest and ES Modules) to guide a tailored resolution.
 
 This issue is tracked under [#1: Jest Config Issue](https://github.com/barisGultekin/freelance-app/issues/1), which documents the details of the problem and potential solutions.
 
