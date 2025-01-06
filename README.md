@@ -120,6 +120,6 @@ Resolving this issue requires investigating how Jest processes ES Modules in the
 - Exploring Babel or other transformers that can handle ES Modules within node_modules.
 - Referencing existing community solutions and issues (e.g., CRA issues related to Jest and ES Modules) to guide a tailored resolution.
 
-This issue is tracked under #ISSUE, which documents the details of the problem and potential solutions.
+This issue is tracked under [#1: Jest Config Issue](https://github.com/barisGultekin/freelance-app/issues/1), which documents the details of the problem and potential solutions.
 
 ## Screenshots
