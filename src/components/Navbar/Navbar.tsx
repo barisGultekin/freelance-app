@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 
 import { useSelector, useDispatch } from "react-redux";
-import { toggleTheme } from "../../features/themeSlice.ts";
+import { toggleTheme } from "../../features/themeSlice";
 import { RootState } from "../../redux/store";
 
 import { LuSunMedium, LuMoon } from "react-icons/lu";
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <img src={logoUrl} alt="" srcset="" />
+        <img src={logoUrl} alt="Freelancer Logo"/>
       </div>
       <div className="navbar-tools">
         <button

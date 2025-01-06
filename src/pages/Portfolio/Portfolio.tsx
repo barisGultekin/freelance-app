@@ -10,14 +10,14 @@ import {
   fetchFreelancerPosts,
   fetchCommentsByPostId,
   fetchCommentCounts,
-} from "../../features/freelancerDetailSlice.ts";
-import { toggleSaveFreelancer } from "../../features/freelancerListSlice.ts";
+} from "../../features/freelancerDetailSlice";
+import { toggleSaveFreelancer } from "../../features/freelancerListSlice";
 import { RootState, AppDispatch } from "../../redux/store";
 
-import ContactInfoRow from "../../components/ContactInfoRow/ContactInfoRow.tsx";
-import PostCard from "../../components/PostCard/PostCard.tsx";
-import HireForm from "../../components/HireForm/HireForm.tsx";
-import Modal from "../../components/Modal/Modal.tsx";
+import ContactInfoRow from "../../components/ContactInfoRow/ContactInfoRow";
+import PostCard from "../../components/PostCard/PostCard";
+import HireForm from "../../components/HireForm/HireForm";
+import Modal from "../../components/Modal/Modal";
 
 import {
   FaChevronLeft,

@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { enableMapSet } from "immer";
 
-import freelancerReducer from "../features/freelancerListSlice.ts";
-import freelancerDetailReducer from "../features/freelancerDetailSlice.ts";
-import themeReducer from "../features/themeSlice.ts";
+import freelancerReducer from "../features/freelancerListSlice";
+import freelancerDetailReducer from "../features/freelancerDetailSlice";
+import themeReducer from "../features/themeSlice";
 
 enableMapSet();
 

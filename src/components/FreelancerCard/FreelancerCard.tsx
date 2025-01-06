@@ -6,6 +6,7 @@ import "./FreelancerCard.css";
 import { FaRegHeart, FaHeart } from "react-icons/fa6";
 
 interface FreelancerCardProps {
+  id: number;
   name: string;
   email: string;
   phone: string;
@@ -29,10 +30,8 @@ const FreelancerCard: React.FC<FreelancerCardProps> = ({
   isSaved,
   onToggleSave,
 }) => {
-
   return (
     <Link to={`/portfolio/${id}`} className="freelancer-card">
-      
       <div className="freelancer-header">
         <div className="freelancer-info">
           <div className="freelancer-img">

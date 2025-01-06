@@ -5,14 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   fetchFreelancers,
   toggleSaveFreelancer,
-} from "../../features/freelancerListSlice.ts";
-import { RootState, AppDispatch } from "../../redux/store.ts";
+} from "../../features/freelancerListSlice";
+import { RootState, AppDispatch } from "../../redux/store";
 
-import FreelancerCard from "../../components/FreelancerCard/FreelancerCard.tsx";
-import FilterPanel from "../../components/FilterPanel/FilterPanel.tsx";
+import FreelancerCard from "../../components/FreelancerCard/FreelancerCard";
+import FilterPanel from "../../components/FilterPanel/FilterPanel";
 
-import Modal from "../../components/Modal/Modal.tsx";
-import HireForm from "../../components/HireForm/HireForm.tsx";
+import Modal from "../../components/Modal/Modal";
+import HireForm from "../../components/HireForm/HireForm";
 
 const Dashboard: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();

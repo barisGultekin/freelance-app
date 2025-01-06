@@ -5,6 +5,7 @@ interface HireFormProps {
   freelancerName: string;
   onSubmit: (formData: {
     freelancerName: string;
+    freelancerId: number;
     name: string;
     email: string;
     message: string;
@@ -19,6 +20,7 @@ const HireForm: React.FC<HireFormProps> = ({
 }) => {
   const [formData, setFormData] = useState({
     freelancerName: "",
+    freelancerId: -1,
     name: "",
     email: "",
     message: "",
@@ -40,7 +42,7 @@ const HireForm: React.FC<HireFormProps> = ({
   };
 
   const handleClose = () => {
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ freelancerName: "", freelancerId: -1, name: "", email: "", message: "" });
     setIsSubmitted(false);
     onClose();
   };
