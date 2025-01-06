@@ -1,21 +1,35 @@
 # Odine Freelance Marketplace
 
+## Table of Contents
+* [Getting Started](#getting-started)
+* [Features](#features)
+* [Project Structure](#project-structure)
+* [Known Issues and Future Work](#known-issues-and-future-work)
+* [Screenshots](#screenshots)
+
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm install`
 
-Installs dependencies and sets up the project.\
+### Install dependencies and set up the project:
+```bash
+  git clone https://github.com/barisGultekin/freelance-app.git
+  cd freelance-app
+  npm install
+```
 
-### `npm start`
+### Run the app in the development mode:
 
-Runs the app in the development mode.\
+```bash
+  npm start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
+### Launch the test runner in the interactive watch mode:
+```bash
+  npm test
+```
 
 ## Features
 
