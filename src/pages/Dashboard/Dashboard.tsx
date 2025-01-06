@@ -69,18 +69,23 @@ const Dashboard: React.FC = () => {
   if (status === "failed") return <p>Failed to load freelancers.</p>;
 
   const filteredFreelancers = freelancers.filter((freelancer: any) => {
-    const matchesName = freelancer.name
-      .toLowerCase()
-      .includes(searchName.toLowerCase());
+    const searchTerm = searchName.toLowerCase();
+    const matchesName = freelancer.name.toLowerCase().includes(searchTerm);
+    const matchesCity = freelancer.address.city.toLowerCase().includes(searchTerm);
     const matchesJobCount =
       freelancer.finishedJobCount >= minJobs &&
       freelancer.finishedJobCount <= maxJobs;
-    const matchesCity =
+    const matchesCityFilter =
       selectedCities.length === 0 ||
       selectedCities.includes(freelancer.address.city);
     const matchesSaved = !showSaved || savedFreelancers.includes(freelancer.id); // Filter by saved if showSaved is true
-
-    return matchesName && matchesJobCount && matchesCity && matchesSaved;
+  
+    return (
+      (matchesName || matchesCity) &&
+      matchesJobCount &&
+      matchesCityFilter &&
+      matchesSaved
+    );
   });
 
   return (
