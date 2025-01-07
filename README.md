@@ -149,7 +149,7 @@ This issue is tracked under [#1: Jest Config Issue](https://github.com/barisGult
 ### Hire Freelancer Form
 <img width="1470" alt="Screenshot 2025-01-06 at 20 33 53" src="https://github.com/user-attachments/assets/c333f280-154e-4a2d-9f7f-9b5564bd94bb" />
 <img width="1470" alt="Screenshot 2025-01-06 at 20 34 17" src="https://github.com/user-attachments/assets/e000867b-09c6-4850-b42a-9b97177fe5d4" />
-<img width="1470" alt="Screenshot 2025-01-06 at 20 34 27" src="https://github.com/user-attachments/assets/87c83f37-7536-426e-a924-718c887d8e94" />
+<img width="1470" alt="Screenshot 2025-01-07 at 14 49 21" src="https://github.com/user-attachments/assets/f20729c6-7cd2-435b-9ce3-3d5c07763e49" />
 
 ### Portfolio Page
 <img width="1470" alt="Screenshot 2025-01-06 at 20 34 35" src="https://github.com/user-attachments/assets/c93db9aa-9e24-4187-8457-e3b943a8930b" />
