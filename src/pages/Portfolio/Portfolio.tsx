@@ -80,6 +80,7 @@ const Portfolio: React.FC = () => {
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <HireForm
           freelancerName={details.name}
+          freelancerId={details.id}
           onSubmit={handleHireSubmit}
           onClose={() => {
             setIsModalOpen(false);

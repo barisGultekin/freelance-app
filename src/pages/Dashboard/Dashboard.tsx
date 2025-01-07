@@ -94,6 +94,7 @@ const Dashboard: React.FC = () => {
         {selectedFreelancer && (
           <HireForm
             freelancerName={selectedFreelancer.name}
+            freelancerId={selectedFreelancer.id}
             onSubmit={handleHireSubmit}
             onClose={() => setIsModalOpen(false)}
           />

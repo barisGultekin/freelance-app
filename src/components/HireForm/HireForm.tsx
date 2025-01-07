@@ -3,6 +3,7 @@ import "./HireForm.css";
 
 interface HireFormProps {
   freelancerName: string;
+  freelancerId: number;
   onSubmit: (formData: {
     freelancerName: string;
     freelancerId: number;
@@ -15,6 +16,7 @@ interface HireFormProps {
 
 const HireForm: React.FC<HireFormProps> = ({
   freelancerName,
+  freelancerId,
   onSubmit,
   onClose,
 }) => {
@@ -37,7 +39,11 @@ const HireForm: React.FC<HireFormProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(formData);
+    onSubmit({
+      ...formData,
+      freelancerName,
+      freelancerId,
+    });
     setIsSubmitted(true);
   };
 
