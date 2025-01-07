@@ -137,25 +137,25 @@ Due to this persistent issue, testing for Redux slices that depend on asynchrono
 This issue is tracked under [#1: Jest Config Issue](https://github.com/barisGultekin/freelance-app/issues/1), which documents the details of the problem and potential solutions.
 
 ## Screenshots
-### Light/Dark Mode
+# Light/Dark Mode
 <img width="1470" alt="Screenshot 2025-01-06 at 20 32 41" src="https://github.com/user-attachments/assets/1ccd2ab7-2560-4e22-a48d-3c9d4647afe0" />
 <img width="1470" alt="Screenshot 2025-01-06 at 20 32 35" src="https://github.com/user-attachments/assets/18b9a05c-e000-47d0-be1c-8cc7d79ef0b8" />
 
-### Search and Filters
+# Search and Filters
 <img width="1470" alt="Screenshot 2025-01-06 at 20 33 17" src="https://github.com/user-attachments/assets/213b6fb4-e3b6-4291-8d5b-d9dcc4f75eb2" />
 <img width="1470" alt="Screenshot 2025-01-06 at 20 33 25" src="https://github.com/user-attachments/assets/688e496e-5be3-4484-9bb2-5d46b5205fc4" />
 <img width="1470" alt="Screenshot 2025-01-06 at 20 33 42" src="https://github.com/user-attachments/assets/8ebd88cd-96b5-44f9-b0a9-e14d93c0c42f" />
 
-### Hire Freelancer Form
+# Hire Freelancer Form
 <img width="1470" alt="Screenshot 2025-01-06 at 20 33 53" src="https://github.com/user-attachments/assets/c333f280-154e-4a2d-9f7f-9b5564bd94bb" />
 <img width="1470" alt="Screenshot 2025-01-06 at 20 34 17" src="https://github.com/user-attachments/assets/e000867b-09c6-4850-b42a-9b97177fe5d4" />
 <img width="1470" alt="Screenshot 2025-01-07 at 14 49 21" src="https://github.com/user-attachments/assets/f20729c6-7cd2-435b-9ce3-3d5c07763e49" />
 
-### Portfolio Page
+# Portfolio Page
 <img width="1470" alt="Screenshot 2025-01-06 at 20 34 35" src="https://github.com/user-attachments/assets/c93db9aa-9e24-4187-8457-e3b943a8930b" />
 <img width="1470" alt="Screenshot 2025-01-06 at 20 34 43" src="https://github.com/user-attachments/assets/fd4220fc-1bd4-4594-bd6a-d4b6fa90ceec" />
 
-### Responsive Design
+# Responsive Design
 <div style="display: flex; justify-content: space-evenly; gap: 16px;">
   <img src="https://github.com/user-attachments/assets/ee56ad8d-8ddd-429e-961f-d4447724ff08" alt="IMG_3721" style="width: 30%;"/>
   <img src="https://github.com/user-attachments/assets/64f53b57-afaf-4e41-aa9d-c3478641421a" alt="IMG_3719" style="width: 30%;"/>
